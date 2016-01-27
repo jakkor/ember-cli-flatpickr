@@ -1,4 +1,4 @@
-# Ember-flatpickr
+# Ember-cli-flatpickr
 
 This addon is a wrapper for [flatpickr](http://chmln.github.io/flatpickr/) date picker.
 
