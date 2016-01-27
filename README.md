@@ -1,26 +1,25 @@
 # Ember-flatpickr
 
-This README outlines the details of collaborating on this Ember addon.
+This addon is a wrapper for [flatpickr](http://chmln.github.io/flatpickr/) date picker.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-cli-flatpickr`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+`{{flat-pickr}}`
 
-## Running Tests
+## Options
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+All options are explained in details on [http://chmln.github.io/flatpickr/](http://chmln.github.io/flatpickr/).
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+* [dateFormat](http://chmln.github.io/flatpickr/)
+* [defaultDate](http://chmln.github.io/flatpickr/)
+* [minDate](http://chmln.github.io/flatpickr/)
+* [maxDate](http://chmln.github.io/flatpickr/)
+* [disable](http://chmln.github.io/flatpickr/)
+* [altInput](http://chmln.github.io/flatpickr/)
+* [altFormat](http://chmln.github.io/flatpickr/)
+* [inline](http://chmln.github.io/flatpickr/)
+* [shorthandCurrentMonth](http://chmln.github.io/flatpickr/)
