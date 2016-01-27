@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-flatpickr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This addon is a wrapper for flatpickr date picker.",
   "directories": {
     "doc": "doc",
