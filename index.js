@@ -7,8 +7,8 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.import('bower_components/flatpickr/dist/flatpickr.min.js');
-    app.import('bower_components/flatpickr/dist/flatpickr.min.css');
+    app.import(app.bowerDirectory + '/flatpickr/dist/flatpickr.min.js');
+    app.import(app.bowerDirectory + '/flatpickr/dist/flatpickr.min.css');
   }
 
 };

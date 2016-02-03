@@ -4,6 +4,7 @@ export default Ember.Component.extend({
   tagName: 'input',
   type: 'text',
   classNames: ['some-class'],
+  attributeBindings: ['value'],
 
   // Default settings
   dateFormat: 'F j, Y',
@@ -15,6 +16,7 @@ export default Ember.Component.extend({
   altFormat: null,
   inline: false,
   shorthandCurrentMonth: false,
+  value: null,
 
   didInsertElement() {
     /*globals flatpickr */
@@ -29,6 +31,7 @@ export default Ember.Component.extend({
       altInput: this.get('altInput'),
       altFormat: this.get('altFormat'),
       inline: this.get('inline'),
+      value: this.get('value'),
       shorthandCurrentMonth: this.get('shorthandCurrentMonth')
 
     });
