@@ -7,7 +7,9 @@ export default Ember.Component.extend({
   attributeBindings: ['value'],
 
   // Default settings
+  enableTime: false,
   dateFormat: 'F j, Y',
+  timeFormat: "H:i",
   defaultDate: null,
   minDate: null,
   maxDate: null,
@@ -17,13 +19,17 @@ export default Ember.Component.extend({
   inline: false,
   shorthandCurrentMonth: false,
   value: null,
+  hourIncrement: 1,
+  minuteIncrement: 5,
 
   didInsertElement() {
     /*globals flatpickr */
     flatpickr('#' + this.elementId, {
 
       // Options
+      enableTime: this.get('enableTime'),
       dateFormat: this.get('dateFormat'),
+      timeFormat: this.get('timeFormat'),
       defaultDate: this.get('defaultDate'),
       minDate: this.get('minDate'),
       maxDate: this.get('maxDate'),
@@ -32,7 +38,11 @@ export default Ember.Component.extend({
       altFormat: this.get('altFormat'),
       inline: this.get('inline'),
       value: this.get('value'),
-      shorthandCurrentMonth: this.get('shorthandCurrentMonth')
+      shorthandCurrentMonth: this.get('shorthandCurrentMonth'),
+      onChange: this.get('onChange'),
+      hourIncrement: this.get('hourIncrement'),
+      minuteIncrement: this.get('minuteIncrement')
+
 
     });
   }

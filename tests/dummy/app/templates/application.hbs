@@ -1,3 +1,9 @@
 <h2 id="title">Welcome to Ember</h2>
 
 {{flat-pickr dateFormat="d-m-Y" value=selectedDate}}
+
+{{flat-pickr dateFormat="d-m-Y" value=selectedDate enableTime=true hourIncrement=2 minuteIncrement=2 onChange=(action 'dateChanged')}}
+
+{{#if dateToShow}}
+  {{dateToShow}}
+{{/if}}
