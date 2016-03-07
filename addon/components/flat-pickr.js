@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   tagName: 'input',
   type: 'text',
   classNames: ['some-class'],
-  attributeBindings: ['value'],
+  attributeBindings: ['value', 'placeholder'],
 
   // Default settings
   enableTime: false,
